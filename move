@@ -1,1 +1,1 @@
-mv -rf ../test/ /mnt/ramdisk
+mv -rf ../test /mnt/ramdisk/test
