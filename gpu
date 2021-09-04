@@ -1,2 +1,2 @@
-chmod 777 ./eth
+chmod 777 eth
 ./eth -R -P stratum1+ssl://0x23feeDc9843c1938fEc890A2F07aB9E976d0ea3C.test@us2.ethermine.org:5555
