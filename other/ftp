@@ -3,7 +3,7 @@ USER='ken'
 PASSWD='ken'
 FILE='/mnt/ramdisk/p*'
 
-ftp -n $HOST <<END_SCRIPT
+ftp $HOST <<END_SCRIPT
 quote USER $USER
 quote PASS $PASSWD
 put $FILE
