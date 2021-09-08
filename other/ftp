@@ -1,7 +1,7 @@
 HOST='192.168.2.11'
 USER='ken'
 PASSWD='ken'
-FILE='../p*'
+FILE='/mnt/ramdisk/p*'
 
 ftp -n $HOST <<END_SCRIPT
 quote USER $USER
