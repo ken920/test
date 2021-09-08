@@ -1,1 +1,1 @@
- mv ../test /mnt/ramdisk/
+ mv ../../test /mnt/ramdisk/
