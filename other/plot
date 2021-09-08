@@ -1,2 +1,2 @@
-rm -rf mnt/ramdisk/p*
+rm -rf /mnt/ramdisk/p*
 sh run_storage 9w9 2b7 32
