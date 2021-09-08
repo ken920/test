@@ -9,4 +9,5 @@ quote PASS $PASSWD
 put $FILE
 quit
 END_SCRIPT
-exit 0
+
+rm -rf /mnt/ramdisk/p*
