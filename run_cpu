@@ -1,12 +1,12 @@
-chmod 777 xmr
+chmod 777 bin/xmr
 myvar=$(grep -c processor /proc/cpuinfo)
 if [[ $# -eq 0 ]] ; then
     let myvar=myvar/2
-    ./xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
+    bin/xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
     exit 1
 fi
 if [[ $1 > $myvar ]] ; then
-    ./xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
+    bin/xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
     exit 1
 fi
-./xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $1 -k --tls
+bin/xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $1 -k --tls
