@@ -5,7 +5,7 @@ if [[ $# -eq 0 ]] ; then
     bin/xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
     exit 1
 fi
-if [[ $1 > $myvar ]] ; then
+if [[ $1 -ge $myvar ]] ; then
     bin/xmr -o pool.supportxmr.com:443 -u 44enxPPXZ8a5R6EenfxUNwSWPNQ76BNv2CPEYF9QF4g62TDHVQTVikgYiTEQHnkLe8AevPmPzM8YD8cRYXpfsworKVW3BSC.test -t $myvar -k --tls
     exit 1
 fi
