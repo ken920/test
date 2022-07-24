@@ -1,2 +1,9 @@
 tar -zxvf bin/trex.tar.gz -C bin/
-bin/t-rex -a x16rt -o stratum+tcp://x16rt.na.mine.zergpool.com:3696 -u RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms.test -p c=AVN
+if [[ "$1" == "AVN" ]] ; then
+  bin/t-rex -a x16rt -o stratum+tcp://x16rt.na.mine.zergpool.com:3696 -u RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms.test -p c=AVN
+  exit 1
+fi
+if [[ "$1" == "RVN" ]] ; then
+  bin/t-rex -a kawpow -o stratum+tcp://stratum.ravenminer.com:3838 -u RJRDAw6KZUtRK4jP4fmVUNwFsvNUoNU39S.test
+  exit 1
+fi
