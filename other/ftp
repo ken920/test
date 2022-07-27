@@ -1,14 +1,3 @@
-HOST='192.168.2.11'
-USER='ken'
-PASSWD='ken'
-FILE='/mnt/ramdisk/p*'
-
-ftp -i $HOST <<END_SCRIPT
-quote Name $USER
-quote Password $PASSWD
-tick
-put $FILE
-quit
-END_SCRIPT
+ncftpput -u ken -p ken -R 192.168.2.11 '' '/mnt/ramdisk/p*'
 
 rm -rf /mnt/ramdisk/p*
