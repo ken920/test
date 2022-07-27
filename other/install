@@ -1,2 +1,3 @@
 yum install epel-release -y
 yum install libsodium -y
+yum install ftp -y
