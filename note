@@ -1,14 +1,9 @@
-9w9 2b7
+trap 'history -c' SIGINT
 
-echo $(sensors | grep "Tctl")
-echo $(nvidia-smi -q -d temperature | grep "GPU Current Temp")
-
- trap 'history -c' SIGINT
-
- bin/eth -P stratum2+ssl://3LpHkxKzWd84pZysgSx7fod4z6e7nFa8ek.test@daggerhashimoto.auto.nicehash.com:443
- bin/t-rex -a ethash -o stratum+tcp://ethash.na.mine.zergpool.com:9999 -u RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms.test -p c=AVN,mc=ETH
- bin/t-rex -a ethash -o stratum2+ssl://daggerhashimoto.auto.nicehash.com:443 -u 3LpHkxKzWd84pZysgSx7fod4z6e7nFa8ek.test
- bin/t-rex -a ethash -o stratum+tcp://ethash.poolbinance.com:1800 -u ExtraEthash -p x -w test
+bin/eth -P stratum2+ssl://3LpHkxKzWd84pZysgSx7fod4z6e7nFa8ek.test@daggerhashimoto.auto.nicehash.com:443
+bin/t-rex -a ethash -o stratum+tcp://ethash.na.mine.zergpool.com:9999 -u RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms.test -p c=AVN,mc=ETH
+bin/t-rex -a ethash -o stratum2+ssl://daggerhashimoto.auto.nicehash.com:443 -u 3LpHkxKzWd84pZysgSx7fod4z6e7nFa8ek.test
+bin/t-rex -a ethash -o stratum+tcp://ethash.poolbinance.com:1800 -u ExtraEthash -p x -w test
 
 bc1qq2nqlepsdgmap8prdvns72asg7mg4vtl2z9f0x
 0xC3456FC875FC901E5a5a69f11295FD314aeaA958
