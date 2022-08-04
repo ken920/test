@@ -1,0 +1,2 @@
+echo $(sensors | grep "Tctl")
+echo $(nvidia-smi -q -d temperature | grep "GPU Current Temp")
