@@ -1,0 +1,12 @@
+chmod 777 bin/avn
+myvar=$(grep -c processor /proc/cpuinfo)
+if [[ $# -eq 0 ]] ; then
+    let myvar=myvar/2
+    bin/avn --algorithm minotaurx --pool minotaurx.na.mine.zergpool.com:7019 --wallet RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms --password c=AVN,mc=AVN --cpu-threads $myvar --disable-gpu
+    exit 1
+fi
+if [[ $1 -ge $myvar ]] ; then
+    bin/avn --algorithm minotaurx --pool minotaurx.na.mine.zergpool.com:7019 --wallet RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms --password c=AVN,mc=AVN --cpu-threads $myvar --disable-gpu
+    exit 1
+fi
+bin/avn --algorithm minotaurx --pool minotaurx.na.mine.zergpool.com:7019 --wallet RR5krrLUGTTnySZhEgBHkr3iDo4RyaTYms --password c=AVN,mc=AVN --cpu-threads $1 --disable-gpu
